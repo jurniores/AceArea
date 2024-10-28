@@ -1,5 +1,5 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#FFFFFF" /> <!-- Cor de fundo da imagem (opcional) -->
-    <corners android:radius="1000dp"/> <!-- Define o formato circular -->
-    <size android:width="100dp" android:height="100dp"/> <!-- Tamanho da imagem -->
+    <solid android:color="@color/colorSend" /> <!-- Cor de fundo da imagem (opcional) -->
+    <corners android:radius="50dp"/> <!-- Define o formato circular -->
+    <size android:width="60dp" android:height="60dp"/> <!-- Tamanho da imagem -->
 </shape>

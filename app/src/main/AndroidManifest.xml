@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AceArea"
         tools:targetApi="31">
         <activity
+            android:name=".UI.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.DenunciaActivity"
+            android:exported="false" />
+        <activity
             android:name=".UI.AreaActivity"
             android:exported="false" />
         <activity

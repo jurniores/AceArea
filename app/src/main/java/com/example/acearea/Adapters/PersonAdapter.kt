@@ -1,6 +1,8 @@
 package com.example.acearea.Adapters
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -57,6 +59,12 @@ class PersonAdapter(
             }
         }
         holder.imagePerson.setImageResource(person.image)
+        holder.itemView.setOnClickListener{
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(person.link))
+            
+
+            holder.itemView.context.startActivity(intent)
+        }
 
     }
 

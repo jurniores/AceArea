@@ -14,4 +14,6 @@
     <color name="colorBorder">#5FFF9800</color>
     <color name="colorColaborador">#2196F3</color>
     <color name="colorSupervisor">#F44336</color>
+    <color name="colorSend">#71FD5F</color>
+    <color name="colorChat">#98FDCC25</color>
 </resources>

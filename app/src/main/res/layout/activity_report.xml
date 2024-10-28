@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.ReportActivity">
+
+    <LinearLayout
+        android:id="@+id/linerar_report_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_arrow_back_24" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linerar_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linerar_report_bottom"
+        android:layout_below="@id/linerar_report_top"
+        android:background="@color/colorChat"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Ace:"
+                android:textColor="#009DFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="290sp"
+                android:layout_height="wrap_content"
+                android:text="Seja bem-vindo, envie sua denûncia"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linerar_report_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+
+        >
+
+        <EditText
+            android:id="@+id/edit_text_repot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_toStartOf="@id/button_message_repot"
+            android:background="#FFF7AD"
+            android:hint="Messagem"
+            android:padding="10dp" />
+
+        <ImageButton
+            android:id="@+id/button_message_repot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_radius"
+            android:src="@drawable/baseline_send_24" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

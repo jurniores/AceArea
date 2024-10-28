@@ -1,10 +1,11 @@
 package com.example.acearea
 
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.acearea.Adapters.PersonAdapter
+import com.example.acearea.UI.ReportActivity
 import com.example.acearea.Users.Person
 import com.example.acearea.databinding.ActivityMainBinding
 
@@ -37,7 +38,6 @@ class MainActivity : AppCompatActivity() {
         adapter.Init()
 
 
-
         setContentView(binding.root)
 
 
@@ -45,11 +45,9 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigation.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.item_logout -> finish()
-                R.id.item_denuncia -> Toast.makeText(
-                    applicationContext,
-                    "Denuncia",
-                    Toast.LENGTH_SHORT
-                ).show()
+                R.id.item_denuncia -> {
+                    startActivity(Intent(this,ReportActivity::class.java))
+                }
             }
             true
         }
